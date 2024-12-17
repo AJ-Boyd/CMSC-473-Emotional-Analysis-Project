@@ -43,9 +43,9 @@ for d in dialog:
     movie_rating = float(d["movieIMDBRating"])
     if movie_rating >= 0 and movie_rating < 4:
         ranges['bad'].append(d)
-    elif movie_rating >= 4 and movie_rating < 8:
+    elif movie_rating >= 4 and movie_rating < 7.5:
         ranges['average'].append(d)
-    elif movie_rating >= 8:
+    elif movie_rating >= 7.5:
         ranges['good'].append(d)
 
 try:
