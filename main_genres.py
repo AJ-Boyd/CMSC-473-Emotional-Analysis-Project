@@ -66,15 +66,19 @@ for d in dialog:
     for line in text:
         if len(line.split()) > 3:
             emotion = get_emotion(line)
-            # for every genre this line of dialog belongs to, increment that emotion's frequency
-            for g in d['movieGenres']:
-                genre_dict[g][emotion] += 1
             i += 1
-            print(f"{i} -- {line}")
+            print(f"{i} -- {line} -- {emotion}")
             
+            try:
+                # for every genre this line of dialog belongs to, increment that emotion's frequency
+                for g in d['movieGenres']:
+                    genre_dict[g][emotion] += 1
+            except Exception as e:
+                print(f"unknown emotion {e}")
 try:
-    # write the data to a file
+    # write the data to a file, you may need to change the encoding
     with open("genre-unchunked.txt", "w", encoding="utf-8") as f:
+        print(genre_dict)
         json.dump(genre_dict, f, ensure_ascii=False, indent=1)
 except Exception as e:
     print(f"error: {e}")
