@@ -16,7 +16,7 @@ DELIMITER = ' +++$+++ '
 line_text = {} # a dictionary where the key is the Line ID and the value is the text associated with it
 
 # populate line_text dictionary
-with open(movie_lines_filepath, 'r') as f:
+with open(movie_lines_filepath, 'r', encoding= 'latin-1') as f:
     for line in f:
         fields = line.split(DELIMITER)
         if len(fields) == 5:
