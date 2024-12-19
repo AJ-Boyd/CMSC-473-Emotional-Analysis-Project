@@ -1,0 +1,29 @@
+[
+ {
+  "rating": "bad",
+  "joy": 843,
+  "sadness": 210,
+  "anger": 480,
+  "surprise": 18,
+  "fear": 267,
+  "love": 29
+ },
+ {
+  "rating": "average",
+  "joy": 22097,
+  "sadness": 6306,
+  "anger": 15120,
+  "surprise": 589,
+  "fear": 6008,
+  "love": 760
+ },
+ {
+  "rating": "good",
+  "joy": 13907,
+  "sadness": 3658,
+  "anger": 8754,
+  "surprise": 369,
+  "fear": 3270,
+  "love": 410
+ }
+]
