@@ -5,31 +5,226 @@ import pandas as pd
 st.set_page_config(layout="wide")
 
 # datasets
-genres_data = [{'genre': 'comedy', 'joy': 12161, 'sadness': 3044, 'anger': 6783, 'surprise': 347, 'fear': 2414, 'love': 432}, 
-{'genre': 'romance', 'joy': 9779, 'sadness': 2615, 'anger': 5195, 'surprise': 252, 'fear': 1919, 'love': 398}, 
-{'genre': 'adventure', 'joy': 6325, 'sadness': 1652, 'anger': 4187, 'surprise': 158, 'fear': 2226, 'love': 173}, 
-{'genre': 'biography', 'joy': 1692, 'sadness': 427, 'anger': 1190, 'surprise': 37, 'fear': 300, 'love': 54}, 
-{'genre': 'drama', 'joy': 20228, 'sadness': 5673, 'anger': 13035, 'surprise': 532, 'fear': 4400, 'love': 683}, 
-{'genre': 'history', 'joy': 914, 'sadness': 274, 'anger': 776, 'surprise': 15, 'fear': 267, 'love': 34}, 
-{'genre': 'action', 'joy': 8824, 'sadness': 2451, 'anger': 6635, 'surprise': 230, 'fear': 2956, 'love': 220}, 
-{'genre': 'crime', 'joy': 8363, 'sadness': 2326, 'anger': 6762, 'surprise': 234, 'fear': 2154, 'love': 246}, 
-{'genre': 'thriller', 'joy': 13877, 'sadness': 4201, 'anger': 10966, 'surprise': 387, 'fear': 4607, 'love': 360}, 
-{'genre': 'mystery', 'joy': 5473, 'sadness': 1861, 'anger': 4433, 'surprise': 172, 'fear': 2019, 'love': 156}, 
-{'genre': 'sci-fi', 'joy': 6178, 'sadness': 1724, 'anger': 4127, 'surprise': 167, 'fear': 2562, 'love': 158}, 
-{'genre': 'fantasy', 'joy': 4355, 'sadness': 1284, 'anger': 2477, 'surprise': 112, 'fear': 1269, 'love': 151}, 
-{'genre': 'horror', 'joy': 4446, 'sadness': 1485, 'anger': 3289, 'surprise': 118, 'fear': 1720, 'love': 114}, 
-{'genre': 'music', 'joy': 975, 'sadness': 229, 'anger': 527, 'surprise': 20, 'fear': 151, 'love': 33}, 
-{'genre': 'western', 'joy': 758, 'sadness': 212, 'anger': 576, 'surprise': 13, 'fear': 172, 'love': 18}, 
-{'genre': 'war', 'joy': 1196, 'sadness': 301, 'anger': 946, 'surprise': 25, 'fear': 317, 'love': 42}, 
-{'genre': 'adult', 'joy': 52, 'sadness': 8, 'anger': 19, 'surprise': 2, 'fear': 6, 'love': 1}, 
-{'genre': 'musical', 'joy': 455, 'sadness': 114, 'anger': 247, 'surprise': 10, 'fear': 101, 'love': 19}, 
-{'genre': 'animation', 'joy': 941, 'sadness': 244, 'anger': 663, 'surprise': 44, 'fear': 281, 'love': 15}, 
-{'genre': 'sport', 'joy': 576, 'sadness': 145, 'anger': 286, 'surprise': 13, 'fear': 81, 'love': 20}, 
-{'genre': 'family', 'joy': 1044, 'sadness': 221, 'anger': 485, 'surprise': 29, 'fear': 252, 'love': 26}, 
-{'genre': 'short', 'joy': 177, 'sadness': 63, 'anger': 94, 'surprise': 3, 'fear': 31, 'love': 13}, 
-{'genre': 'film-noir', 'joy': 280, 'sadness': 88, 'anger': 190, 'surprise': 5, 'fear': 71, 'love': 8}, 
-{'genre': 'documentary', 'joy': 227, 'sadness': 65, 'anger': 120, 'surprise': 5, 'fear': 46, 'love': 16}]
 
+# genre data unchunked
+genres_data = [{
+  "genre": "comedy",
+  "joy": 31938,
+  "sadness": 6585,
+  "anger": 19939,
+  "surprise": 622,
+  "fear": 11423,
+  "love": 1363
+ },
+{
+  "genre": "romance",
+  "joy": 26040,
+  "sadness": 5670,
+  "anger": 16096,
+  "surprise": 481,
+  "fear": 9401,
+  "love": 1277
+ },
+ {
+  "genre": "adventure",
+  "joy": 14931,
+  "sadness": 3318,
+  "anger": 10048,
+  "surprise": 251,
+  "fear": 7530,
+  "love": 403
+ },
+ {
+  "genre": "biography",
+  "joy": 4696,
+  "sadness": 992,
+  "anger": 3589,
+  "surprise": 72,
+  "fear": 1609,
+  "love": 159
+ },
+ {
+  "genre": "drama",
+  "joy": 55476,
+  "sadness": 12402,
+  "anger": 39176,
+  "surprise": 987,
+  "fear": 21938,
+  "love": 2108
+ },
+ {
+  "genre": "history",
+  "joy": 2490,
+  "sadness": 583,
+  "anger": 2140,
+  "surprise": 31,
+  "fear": 1077,
+  "love": 87
+ },
+ {
+  "genre": "action",
+  "joy": 21285,
+  "sadness": 4884,
+  "anger": 16290,
+  "surprise": 377,
+  "fear": 10825,
+  "love": 539
+ },
+ {
+  "genre": "crime",
+  "joy": 22806,
+  "sadness": 5135,
+  "anger": 18883,
+  "surprise": 374,
+  "fear": 10248,
+  "love": 764
+ },
+ {
+  "genre": "thriller",
+  "joy": 36099,
+  "sadness": 8906,
+  "anger": 29286,
+  "surprise": 652,
+  "fear": 18669,
+  "love": 1079
+ },
+ {
+  "genre": "mystery",
+  "joy": 14544,
+  "sadness": 4006,
+  "anger": 12096,
+  "surprise": 311,
+  "fear": 8099,
+  "love": 468
+ },
+ {
+  "genre": "sci-fi",
+  "joy": 14742,
+  "sadness": 3475,
+  "anger": 10102,
+  "surprise": 273,
+  "fear": 8486,
+  "love": 394
+ },
+ {
+  "genre": "fantasy",
+  "joy": 10349,
+  "sadness": 2591,
+  "anger": 6378,
+  "surprise": 205,
+  "fear": 4546,
+  "love": 405
+ },
+ {
+  "genre": "horror",
+  "joy": 10683,
+  "sadness": 2945,
+  "anger": 8036,
+  "surprise": 197,
+  "fear": 5977,
+  "love": 361
+ },
+ {
+  "genre": "music",
+  "joy": 2597,
+  "sadness": 518,
+  "anger": 1580,
+  "surprise": 39,
+  "fear": 750,
+  "love": 96
+ },
+ {
+  "genre": "western",
+  "joy": 1963,
+  "sadness": 425,
+  "anger": 1598,
+  "surprise": 26,
+  "fear": 826,
+  "love": 51
+ },
+ {
+  "genre": "war",
+  "joy": 3131,
+  "sadness": 650,
+  "anger": 2485,
+  "surprise": 38,
+  "fear": 1393,
+  "love": 109
+ },
+ {
+  "genre": "adult",
+  "joy": 116,
+  "sadness": 18,
+  "anger": 60,
+  "surprise": 2,
+  "fear": 30,
+  "love": 6
+ },
+ {
+  "genre": "musical",
+  "joy": 1060,
+  "sadness": 222,
+  "anger": 613,
+  "surprise": 16,
+  "fear": 345,
+  "love": 46
+ },
+ {
+  "genre": "animation",
+  "joy": 2271,
+  "sadness": 526,
+  "anger": 1565,
+  "surprise": 61,
+  "fear": 963,
+  "love": 50
+ },
+ {
+  "genre": "sport",
+  "joy": 1568,
+  "sadness": 319,
+  "anger": 930,
+  "surprise": 23,
+  "fear": 492,
+  "love": 57
+ },
+ {
+  "genre": "family",
+  "joy": 2322,
+  "sadness": 457,
+  "anger": 1318,
+  "surprise": 40,
+  "fear": 891,
+  "love": 86
+ },
+ {
+  "genre": "short",
+  "joy": 525,
+  "sadness": 118,
+  "anger": 296,
+  "surprise": 8,
+  "fear": 161,
+  "love": 32
+ },
+ {
+  "genre": "film-noir",
+  "joy": 715,
+  "sadness": 166,
+  "anger": 510,
+  "surprise": 11,
+  "fear": 250,
+  "love": 25
+ },
+ {
+  "genre": "documentary",
+  "joy": 492,
+  "sadness": 120,
+  "anger": 305,
+  "surprise": 6,
+  "fear": 183,
+  "love": 34
+ }]
+
+# ratings data unchunked
 ratings_data = [
     {"rating": "bad", "joy": 2071, "sadness": 431, "anger": 1301, "surprise": 27, "fear": 968, "love": 62},
     {"rating": "average", "joy": 56134, "sadness": 13162, "anger": 40953, "surprise": 996, "fear": 25092, "love": 2197},
