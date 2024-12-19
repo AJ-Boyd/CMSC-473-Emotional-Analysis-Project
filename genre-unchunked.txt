@@ -1,0 +1,218 @@
+{
+ "comedy": {
+  "genre": "comedy",
+  "joy": 31938,
+  "sadness": 6585,
+  "anger": 19939,
+  "surprise": 622,
+  "fear": 11423,
+  "love": 1363
+ },
+ "romance": {
+  "genre": "romance",
+  "joy": 26040,
+  "sadness": 5670,
+  "anger": 16096,
+  "surprise": 481,
+  "fear": 9401,
+  "love": 1277
+ },
+ "adventure": {
+  "genre": "adventure",
+  "joy": 14931,
+  "sadness": 3318,
+  "anger": 10048,
+  "surprise": 251,
+  "fear": 7530,
+  "love": 403
+ },
+ "biography": {
+  "genre": "biography",
+  "joy": 4696,
+  "sadness": 992,
+  "anger": 3589,
+  "surprise": 72,
+  "fear": 1609,
+  "love": 159
+ },
+ "drama": {
+  "genre": "drama",
+  "joy": 55476,
+  "sadness": 12402,
+  "anger": 39176,
+  "surprise": 987,
+  "fear": 21938,
+  "love": 2108
+ },
+ "history": {
+  "genre": "history",
+  "joy": 2490,
+  "sadness": 583,
+  "anger": 2140,
+  "surprise": 31,
+  "fear": 1077,
+  "love": 87
+ },
+ "action": {
+  "genre": "action",
+  "joy": 21285,
+  "sadness": 4884,
+  "anger": 16290,
+  "surprise": 377,
+  "fear": 10825,
+  "love": 539
+ },
+ "crime": {
+  "genre": "crime",
+  "joy": 22806,
+  "sadness": 5135,
+  "anger": 18883,
+  "surprise": 374,
+  "fear": 10248,
+  "love": 764
+ },
+ "thriller": {
+  "genre": "thriller",
+  "joy": 36099,
+  "sadness": 8906,
+  "anger": 29286,
+  "surprise": 652,
+  "fear": 18669,
+  "love": 1079
+ },
+ "mystery": {
+  "genre": "mystery",
+  "joy": 14544,
+  "sadness": 4006,
+  "anger": 12096,
+  "surprise": 311,
+  "fear": 8099,
+  "love": 468
+ },
+ "sci-fi": {
+  "genre": "sci-fi",
+  "joy": 14742,
+  "sadness": 3475,
+  "anger": 10102,
+  "surprise": 273,
+  "fear": 8486,
+  "love": 394
+ },
+ "fantasy": {
+  "genre": "fantasy",
+  "joy": 10349,
+  "sadness": 2591,
+  "anger": 6378,
+  "surprise": 205,
+  "fear": 4546,
+  "love": 405
+ },
+ "horror": {
+  "genre": "horror",
+  "joy": 10683,
+  "sadness": 2945,
+  "anger": 8036,
+  "surprise": 197,
+  "fear": 5977,
+  "love": 361
+ },
+ "music": {
+  "genre": "music",
+  "joy": 2597,
+  "sadness": 518,
+  "anger": 1580,
+  "surprise": 39,
+  "fear": 750,
+  "love": 96
+ },
+ "western": {
+  "genre": "western",
+  "joy": 1963,
+  "sadness": 425,
+  "anger": 1598,
+  "surprise": 26,
+  "fear": 826,
+  "love": 51
+ },
+ "war": {
+  "genre": "war",
+  "joy": 3131,
+  "sadness": 650,
+  "anger": 2485,
+  "surprise": 38,
+  "fear": 1393,
+  "love": 109
+ },
+ "adult": {
+  "genre": "adult",
+  "joy": 116,
+  "sadness": 18,
+  "anger": 60,
+  "surprise": 2,
+  "fear": 30,
+  "love": 6
+ },
+ "musical": {
+  "genre": "musical",
+  "joy": 1060,
+  "sadness": 222,
+  "anger": 613,
+  "surprise": 16,
+  "fear": 345,
+  "love": 46
+ },
+ "animation": {
+  "genre": "animation",
+  "joy": 2271,
+  "sadness": 526,
+  "anger": 1565,
+  "surprise": 61,
+  "fear": 963,
+  "love": 50
+ },
+ "sport": {
+  "genre": "sport",
+  "joy": 1568,
+  "sadness": 319,
+  "anger": 930,
+  "surprise": 23,
+  "fear": 492,
+  "love": 57
+ },
+ "family": {
+  "genre": "family",
+  "joy": 2322,
+  "sadness": 457,
+  "anger": 1318,
+  "surprise": 40,
+  "fear": 891,
+  "love": 86
+ },
+ "short": {
+  "genre": "short",
+  "joy": 525,
+  "sadness": 118,
+  "anger": 296,
+  "surprise": 8,
+  "fear": 161,
+  "love": 32
+ },
+ "film-noir": {
+  "genre": "film-noir",
+  "joy": 715,
+  "sadness": 166,
+  "anger": 510,
+  "surprise": 11,
+  "fear": 250,
+  "love": 25
+ },
+ "documentary": {
+  "genre": "documentary",
+  "joy": 492,
+  "sadness": 120,
+  "anger": 305,
+  "surprise": 6,
+  "fear": 183,
+  "love": 34
+ }
+}
